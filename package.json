@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/HyunmoAhn/react-boilerplate.git",
   "author": "ahnhyunmo <gusahdks@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "15.6.1",
+    "react-dom": "15.6.1"
+  }
 }
