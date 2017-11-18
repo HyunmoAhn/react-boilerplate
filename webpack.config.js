@@ -6,6 +6,7 @@ module.exports = {
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'build'),
+		publicPath: '/',
 	},
 	devServer: {
 		contentBase: 'build',
@@ -33,5 +34,8 @@ module.exports = {
 			template: path.join(__dirname, 'index.html'),
 			inject: 'body',
 		}),
-	]
+	],
+	resolve: {
+		extensions: ['.js', '.jsx'],
+	},
 };

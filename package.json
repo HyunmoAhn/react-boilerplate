@@ -11,8 +11,10 @@
     "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
+    "prop-types": "15.5.10",
     "react": "15.6.1",
-    "react-dom": "15.6.1"
+    "react-dom": "15.6.1",
+    "react-router": "3.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
