@@ -1,0 +1,9 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "using this project that start another project to use react",
+  "main": "index.js",
+  "repository": "https://github.com/HyunmoAhn/react-boilerplate.git",
+  "author": "ahnhyunmo <gusahdks@gmail.com>",
+  "license": "MIT"
+}

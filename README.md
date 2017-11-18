@@ -3,3 +3,6 @@ start kit that project using react
 
 # Sequence
 make `.gitignore` file
+```
+yarn init
+```
