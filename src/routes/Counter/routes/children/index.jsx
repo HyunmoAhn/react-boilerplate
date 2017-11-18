@@ -1,4 +1,4 @@
-import Children from '../../../../components/Children';
+import Children from 'components/Children';
 
 export default () => ({
 	path: 'children',
