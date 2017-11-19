@@ -10,7 +10,6 @@ import axios from 'axios';
  * @param {?Object} options - axios options (@see https://github.com/mzabriskie/axios#request-config)
  */
 const callApi = (endpoint, options) => {
-	console.log(endpoint, options);
 	return axios({
 		url: endpoint,
 		...options,
