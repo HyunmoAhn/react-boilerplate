@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -7,14 +8,6 @@ module.exports = {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'build'),
 		publicPath: '/',
-	},
-	devServer: {
-		contentBase: 'build',
-		disableHostCheck: true, // do not use production mode
-		historyApiFallback: true,
-		hot: true,
-		host: '0.0.0.0',
-		port: 4000,
 	},
 	module: {
 		rules: [
@@ -34,6 +27,13 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: path.join(__dirname, 'index.html'),
 			inject: 'body',
+		}),
+		new webpack.DefinePlugin({
+			'process.env': {
+				NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+			},
+			'__DEV__': process.env.NODE_ENV === 'development',
+			'__PROD__': process.env.NODE_ENV === 'production',
 		}),
 	],
 	resolve: {
