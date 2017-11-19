@@ -11,6 +11,7 @@
     "build": "NODE_ENV=production webpack --config webpack.prod.config.js"
   },
   "dependencies": {
+    "immutable": "^3.8.2",
     "normalize.css": "^7.0.0",
     "prop-types": "15.5.10",
     "react": "15.6.1",
@@ -20,6 +21,7 @@
     "react-router": "3.0.0",
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
+    "redux-immutable": "^4.0.0",
     "reselect": "^3.0.1"
   },
   "devDependencies": {
