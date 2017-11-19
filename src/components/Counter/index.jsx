@@ -1,36 +1,35 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Counter.scss';
 
-class Counter extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			value: 0,
-		};
-		this.handleIncrement = this.handleIncrement.bind(this);
-		this.handleDecrement = this.handleDecrement.bind(this);
-	}
-
-	handleIncrement() {
-		this.setState({ value: this.state.value + 1 });
-	}
-
-	handleDecrement() {
-		this.setState({ value: this.state.value - 1 });
-	}
-
-	render() {
-		return (
-			<div className="Counter">
-				<span className="Counter__value">
-					{this.state.value}
-				</span>
-				<input className="Counter__btn" type="button" value="increment" onClick={this.handleIncrement} />
-				<input className="Counter__btn" type="button" value="decrement" onClick={this.handleDecrement} />
-				{this.props.children}
-			</div>
-		)
-	}
+const propTypes = {
+	children: PropTypes.element,
+	value: PropTypes.number,
+	onIncrement: PropTypes.func,
+	onDecrement: PropTypes.func,
 };
+
+const defaultProps = {
+	children: null,
+	value: 0,
+	onIncrement() {},
+	onDecrement() {},
+};
+
+function Counter({ children, value, onIncrement, onDecrement }) {
+	return (
+		<div className="Counter">
+				<span className="Counter__value">
+					{value}
+				</span>
+			<input className="Counter__btn" type="button" value="increment" onClick={onIncrement} />
+			<input className="Counter__btn" type="button" value="decrement" onClick={onDecrement} />
+			{children}
+		</div>
+	);
+}
+
+Counter.propTypes = propTypes;
+Counter.defaultProps = defaultProps;
 
 export default Counter;

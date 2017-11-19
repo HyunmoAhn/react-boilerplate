@@ -1,9 +1,9 @@
-import Counter from 'components/Counter';
+import CounterContainer from './containers/CounterContainer';
 import Children from './routes/children';
 
 export default () => ({
 	path: 'counter',
-	component: Counter,
+	component: CounterContainer,
 	childRoutes: [
 		Children(),
 	],
