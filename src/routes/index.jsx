@@ -1,13 +1,13 @@
 import RootLayout from '../components/RootLayout';
+import ApiCallSample from './ApiCallSample';
 import Counter from './Counter';
-import GithubCall from './GithubCall';
 
 const routes = (store) => ({
 	path: '/',
 	component: RootLayout,
 	childRoutes: [
+		ApiCallSample(store),
 		Counter(store),
-		GithubCall(store),
 	],
 });
 
