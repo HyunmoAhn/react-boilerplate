@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Counter /> should match to snapshot when render default 1`] = `
+<div
+  className="Counter"
+>
+  <span
+    className="Counter__value"
+  >
+    0
+  </span>
+  <input
+    className="Counter__btn"
+    onClick={[Function]}
+    type="button"
+    value="increment"
+  />
+  <input
+    className="Counter__btn"
+    onClick={[Function]}
+    type="button"
+    value="decrement"
+  />
+</div>
+`;
