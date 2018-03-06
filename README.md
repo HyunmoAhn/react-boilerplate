@@ -14,7 +14,7 @@ yarn add --dev html-webpack-plugin
 yarn add react-router@3
 yarn add prop-types@15.5.10
 yarn add --dev webpack-merge
-yarn add --dev style-loader css-loader postcss-loader resolve-url-loader sass-loader node-sass
+yarn add --dev style-loader css-loader postcss-loader resolve-url-loader sass-loader node-sass sass-resources-loader
 yarn add --dev file-loader
 yarn add redux redux-actions react-redux reselect
 yarn add --dev redux-devtools-extension
