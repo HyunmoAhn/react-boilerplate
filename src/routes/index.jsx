@@ -1,6 +1,7 @@
 import RootLayout from '../components/RootLayout';
 import ApiCallSample from './ApiCallSample';
 import Counter from './Counter';
+import Iframe from './Iframe';
 
 const routes = (store) => ({
 	path: '/',
@@ -8,6 +9,7 @@ const routes = (store) => ({
 	childRoutes: [
 		ApiCallSample(store),
 		Counter(store),
+    Iframe(store),
 	],
 });
 
