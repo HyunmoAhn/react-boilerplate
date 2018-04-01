@@ -9,7 +9,7 @@ import './scss/index.scss';
 ReactDOM.render(
   <Provider store={store}>
     <div>
-      <Router history={browserHistory} routes={routes()} />,
+      <Router history={browserHistory} routes={routes()} />
     </div>
   </Provider>,
   document.getElementById('root'),
