@@ -3,12 +3,12 @@ import ApiCallSample from './ApiCallSample';
 import Counter from './Counter';
 
 const routes = (store) => ({
-	path: '/',
-	component: RootLayout,
-	childRoutes: [
-		ApiCallSample(store),
-		Counter(store),
-	],
+  path: '/',
+  component: RootLayout,
+  childRoutes: [
+    ApiCallSample(store),
+    Counter(store),
+  ],
 });
 
 export default routes;

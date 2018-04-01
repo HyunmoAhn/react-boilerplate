@@ -4,7 +4,7 @@ import ids from './ids';
 import isFetch from './isFetch';
 
 export default combineReducers({
-	byId,
-	ids,
-	isFetch,
+  byId,
+  ids,
+  isFetch,
 });

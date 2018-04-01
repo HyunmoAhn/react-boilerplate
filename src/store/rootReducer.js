@@ -3,8 +3,8 @@ import apiCall from './apiCall/reducers';
 import counter from './counter/reducers';
 
 const rootReducer = combineReducers({
-	apiCall,
-	counter,
+  apiCall,
+  counter,
 });
 
 export default rootReducer;

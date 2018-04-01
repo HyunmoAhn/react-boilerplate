@@ -4,11 +4,11 @@ import * as selectors from 'store/apiCall/selectors';
 import * as actions from 'store/apiCall/actions';
 
 const mapStateToProps = state => ({
-	data: selectors.getDataSelector(state),
+  data: selectors.getDataSelector(state),
 });
 
 const mapDispatchToProps = {
-	onFetchApiCall: actions.apiCallSample,
+  onFetchApiCall: actions.apiCallSample,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ApiCallSample);
