@@ -5,14 +5,14 @@ start kit that project using react
 make `.gitignore` file
 ```
 yarn init
-yarn add react@15.6.1
-yarn add react-dom@15.6.1
-yarn add --dev webpack
+yarn add react@16.3
+yarn add react-dom@16.3
+yarn add --dev webpack@4.4.1
 yarn add --dev babel-core babel-loader babel-preset-es2015 babel-preset-react
 yarn add --dev webpack-dev-server
 yarn add --dev html-webpack-plugin
-yarn add react-router@3
-yarn add prop-types@15.5.10
+yarn add react-router@4.2
+yarn add prop-types@15.6.1
 yarn add --dev webpack-merge
 yarn add --dev style-loader css-loader postcss-loader resolve-url-loader sass-loader node-sass sass-resources-loader
 yarn add --dev file-loader
@@ -26,14 +26,7 @@ yarn add --dev babel-preset-stage-0
 # Technology
 
 ```
-react: 15.6.1
-react-dom: 15.6.1
-react-router: 3.0.0
+react: 16.3.0
+react-dom: 16.3.0
+react-router: 4.2.0
 ```
-
-
-# Todo
-- what is babel-core
-- what is babel-loader
-- what is babel-preset-es2015
-- what is babel-preset-react
