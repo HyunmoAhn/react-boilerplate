@@ -14,12 +14,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: [
-          'react-hot-loader',
-          {
-            loader: 'babel-loader',
-          }
-        ]
+        use: ['babel-loader'],
       },
       {
         test: /\.scss$/,
@@ -60,6 +55,7 @@ module.exports = {
       components: path.resolve(__dirname, 'src/components'),
       containers: path.resolve(__dirname, 'src/containers'),
       routes: path.resolve(__dirname, 'src/routes'),
+      scss: path.resolve(__dirname, 'src/scss'),
       store: path.resolve(__dirname, 'src/store'),
       utils: path.resolve(__dirname, 'src/utils'),
     },
