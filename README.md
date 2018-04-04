@@ -1,4 +1,4 @@
-# react-boilerplate
+# react-boilerplate [![CircleCI](https://circleci.com/gh/HyunmoAhn/react-boilerplate.svg?style=shield&circle-token=6b59fb0a576e6a171d29b51dd2b692d617ec7260)](https://circleci.com/gh/HyunmoAhn/react-boilerplate)
 start kit that project using react 
 
 # Sequence
