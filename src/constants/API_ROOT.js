@@ -1,1 +1,1 @@
-export const GITHUB_API = 'https://api.github.com';
+export default 'https://api.github.com';

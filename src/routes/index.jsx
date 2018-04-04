@@ -10,7 +10,7 @@ function routes() {
       <Route path="/api-call" component={ApiCallSampleContainer} />
       <Redirect to="/counter" from="/" />
     </Switch>
-  )
+  );
 }
 
 export default routes;

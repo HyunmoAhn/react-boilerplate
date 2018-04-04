@@ -4,9 +4,7 @@ import {
   counterIncrement,
   counterDecrement,
 } from 'store/counter/actions';
-import {
-  valueSelector,
-} from 'store/counter/selectors';
+import { valueSelector } from 'store/counter/selectors';
 
 const mapStateToProps = state => ({
   value: valueSelector(state),

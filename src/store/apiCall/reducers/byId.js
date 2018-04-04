@@ -8,7 +8,7 @@ const byIdReducer = handleActions({
   [actions.apiCallSampleSuccess]: (state, action) => {
     const ids = {};
 
-    action.payload.data.forEach(v => {
+    action.payload.data.forEach((v) => {
       ids[v.id] = v;
     });
     return Immutable.fromJS(ids);

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const propTypes = {
-  data: PropTypes.array,
+  data: PropTypes.arrayOf(PropTypes.any),
   onFetchApiCall: PropTypes.func,
 };
 
@@ -23,7 +23,7 @@ class ApiCallSample extends React.Component {
         >
           ApiCall!
         </button>
-        {data.map((v, index) => <div key={index}>{v}</div>)}
+        {data.map(v => <div key={v}>{v}</div>)}
       </div>
 
     );

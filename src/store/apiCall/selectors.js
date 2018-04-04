@@ -22,7 +22,7 @@ export const getDataSelector = createSelector(
   (byId, ids) => {
     const data = [];
 
-    ids.forEach(id => {
+    ids.forEach((id) => {
       data.push(byId.get(id.toString()));
     });
 

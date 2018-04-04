@@ -3,10 +3,10 @@ import workImage from 'assets/image/work-image.jpg';
 import './Children.scss';
 
 function Children() {
-  return(
+  return (
     <div>
       Children
-      <img src={workImage} alt="work-image" />
+      <image src={workImage} alt="work-image" />
     </div>
   );
 }

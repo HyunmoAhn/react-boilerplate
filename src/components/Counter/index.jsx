@@ -16,12 +16,17 @@ const defaultProps = {
   onDecrement() {},
 };
 
-function Counter({ children, value, onIncrement, onDecrement }) {
+function Counter({
+  children,
+  value,
+  onIncrement,
+  onDecrement,
+}) {
   return (
     <div className="Counter">
-        <span className="Counter__value">
-          {value}
-        </span>
+      <span className="Counter__value">
+        {value}
+      </span>
       <input className="Counter__btn" type="button" value="increment" onClick={onIncrement} />
       <input className="Counter__btn" type="button" value="decrement" onClick={onDecrement} />
       {children}

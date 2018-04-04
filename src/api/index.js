@@ -9,13 +9,11 @@ import axios from 'axios';
  * @param {string} endpoint - HTTP request endpoint URL
  * @param {?Object} options - axios options (@see https://github.com/mzabriskie/axios#request-config)
  */
-const callApi = (endpoint, options) => {
-  return axios({
-    url: endpoint,
-    ...options,
-  })
-    .then(response => response.data)
-    .catch((error) => Promise.reject(error));
-};
+const callApi = (endpoint, options) => axios({
+  url: endpoint,
+  ...options,
+})
+  .then(response => response.data)
+  .catch(error => Promise.reject(error));
 
 export default callApi;

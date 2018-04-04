@@ -14,5 +14,5 @@ describe('value reducer', () => {
   it('should handle counterIncrement', () => {
     expect(value(5, actions.counterDecrement())).toEqual(4);
     expect(value(4, actions.counterDecrement())).toEqual(3);
-  })
+  });
 });
