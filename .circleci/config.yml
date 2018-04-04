@@ -20,6 +20,9 @@ jobs:
           - ./node_modules
           - ~/.yarn-cache
       - run:
+          name: Build
+          command: yarn build
+      - run:
           name: Test
           command: yarn test:coverage --maxWorkers=2
       - store_artifacts:
