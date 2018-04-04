@@ -3,7 +3,7 @@
 exports[`<Children /> should match to snapshot when render default 1`] = `
 <div>
   Children
-  <img
+  <image
     alt="work-image"
     src={Object {}}
   />
