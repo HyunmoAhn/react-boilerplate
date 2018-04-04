@@ -23,6 +23,13 @@ yarn add redux-thunk axios
 yarn add --dev babel-preset-stage-0
 ```
 
+`eslint`
+```
+yarn add --dev eslint eslint-config-airbnb eslint-loader eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+yarn add --dev husky lint-staged
+```
+make `.esintrc` and `.eslintignore` file.
+
 # Technology
 
 ```
