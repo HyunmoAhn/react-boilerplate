@@ -4,6 +4,10 @@ import {
   counterIncrement,
   counterDecrement,
 } from 'store/counter/actions';
+import {
+  modalClose,
+  modalOpen,
+} from 'store/modal/actions';
 import { valueSelector } from 'store/counter/selectors';
 
 const mapStateToProps = state => ({
@@ -13,6 +17,8 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = {
   onIncrement: counterIncrement,
   onDecrement: counterDecrement,
+  onModalClose: modalClose,
+  onModalOpen: modalOpen,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
