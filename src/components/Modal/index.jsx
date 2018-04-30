@@ -4,7 +4,7 @@ import ReactModal from 'react-modal';
 import * as MODAL from 'constants/MODAL_TYPE';
 import Alert from './content/Alert';
 import Confirm from './content/Confirm';
-import './modal.scss';
+import './Modal.scss';
 
 const propTypes = {
   modalType: PropTypes.string,

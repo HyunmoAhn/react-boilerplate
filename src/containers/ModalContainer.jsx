@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Modal from 'components/modal';
+import Modal from 'components/Modal';
 import { modalClose } from 'store/modal/actions';
 import {
   modalPropsSelector,
