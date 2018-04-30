@@ -21,5 +21,18 @@ exports[`<Counter /> should match to snapshot when render default 1`] = `
     type="button"
     value="decrement"
   />
+  <input
+    className="Counter__btn"
+    onClick={[Function]}
+    type="button"
+    value="Open ALERT Modal"
+  />
+        
+  <input
+    className="Counter__btn"
+    onClick={[Function]}
+    type="button"
+    value="Open CONFIRM Modal"
+  />
 </div>
 `;
