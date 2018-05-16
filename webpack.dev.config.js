@@ -3,6 +3,7 @@ const webpackBaseConfig = require('./webpack.basic.config');
 
 module.exports = webpackMerge(webpackBaseConfig, {
   cache: true,
+  mode: 'development',
   devServer: {
     contentBase: 'build',
     disableHostCheck: true, // do not use production mode
