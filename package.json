@@ -7,12 +7,12 @@
   "author": "ahnhyunmo <gusahdks@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --config webpack.dev.config.js --hot --inline --watch",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.config.js --hot --inline --watch",
     "test": "jest --config jest.config.json",
     "test:watch": "yarn test -- --watch",
     "test:coverage": "yarn test -- --coverage",
     "coverage": "open ./coverage/lcov-report/index.html",
-    "build": "NODE_ENV=production webpack --config webpack.prod.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js",
     "lint": "eslint src --ext .js,.jsx",
     "precommit": "lint-staged",
     "prepush": "yarn lint"
@@ -21,9 +21,12 @@
     "*.{js,jsx}": "eslint"
   },
   "dependencies": {
+    "autoprefixer": "^8.5.0",
     "axios": "^0.18.0",
+    "cross-env": "^5.1.5",
     "immutable": "^3.8.2",
     "normalize.css": "^8.0.0",
+    "postcss-loader": "^2.1.5",
     "prop-types": "15.6.1",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
