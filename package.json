@@ -23,7 +23,7 @@
   "dependencies": {
     "autoprefixer": "^8.5.0",
     "axios": "^0.18.0",
-    "cross-env": "^5.1.5",
+    "cross-env": "^5.2.0",
     "immutable": "^3.8.2",
     "normalize.css": "^8.0.0",
     "postcss-loader": "^2.1.5",
